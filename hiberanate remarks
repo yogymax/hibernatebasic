@@ -1,0 +1,50 @@
+
+JDBC Steps
+	Download Jar -- DB Specific
+	Load the drivers -- Driverclass name
+	Create Connection -- url username password
+				url		
+					protocal
+					dbname
+					machine name/host/ip
+					portno
+					schema name
+					
+	Create Statement from connection
+	Execute query using stmt
+	get resultset
+	close resources
+	
+	
+	JDBC never supports DB independent feature
+	Boilerplate code -- unncessary code other than business logic
+	Developer must have SQL knowledge in depth
+	Developer is responsible to map object fields to database coln
+	EveryTime whenever your write a query
+	At the time iterating resultset you need to map fields explicitly -- everytime
+	JDBC doesnt supports -- oop -- inheritance --mapping(Associations) 
+	JDBC doesnt supports Collection features
+	JDBC doesnt supports caching mechanism
+	JDBC -- Automatically tables will not be created -- you need to write create table query
+	
+	JDBC -- URL/Username/Password/Driverclass (dbspecific jars)
+	
+	Hibernate -- jdbc internally -- 
+		JDBC -- URL/Username/Password/Driverclass (dbspecific jars)
+			   dailect -- help 
+			   
+		
+		objects.save() -- hql -- Mysql(Number)
+							     Oracle(Num(10,0))
+		int -- abc --
+	
+		
+	
+	hibernate-configuration - file  ---- hibernate.cfg.xml -- holds db info + mapping files
+	hibernate -mapping -- file -- employee-mapping.xml -- ORM
+	
+		
+	
+	http://www.benchresources.net/jdbc-driver-list-and-url-for-all-databases/
+	
+	https://www.mkyong.com/hibernate/hibernate-dialect-collection/
