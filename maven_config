@@ -1,0 +1,59 @@
+
+Steps to configure maven
+
+	Download apache maven -- 3.3.9-bin.zip
+	extract this folder
+	copy path -- E:\MySofts\apache-maven-3.3.9
+
+	System Env Variables
+		MAVEN_HOME=E:\MySofts\apache-maven-3.3.9
+		path = --------------------;%MAVEN_HOME%\bin
+	
+	Open Fresh Command Prompt
+	type
+		>mvn
+	
+	C:\users\{login account name}\			.m2\repository
+											    \copy here -- settings.xml from git repo - https://github.com/yogymax/seleniumwithSettingsxml/tree/master/src/main/java/com/scp
+												
+	Eclipse--File -- New -- Other -- Maven Project -- Select Location and then Next or keep as it is -- Maven-archtype-quickstart(DesktopApp) -- You  need to specify
+		--group_id -- tells about group name/account name -- this project belongs to 				which grp in a company
+		--artifact_id --- Project Name -- what is the project name
+		version -- which version you are currently developing
+		package -- folder strucutre
+		
+		
+		Click Finish
+	
+	
+	FYI --- Maven_archtype-Webapp(Webapp)
+	
+	
+	HibernateApp
+		src/main/java -- always holds business logic
+		src/test/java -- testing logic -- unit test cases /whitebox testing /module base/
+		src/test/resources -- it holds required resources for testing logic--test data/conf
+		src/main/resources ---- it holds required resources for Business logic--test data/conf
+		Libraries
+			Maven dependencies -- all dependencies which we are going to specify inside 	pom.xml
+			JRE Lib -- java lib dependencies
+		src -- folder structure view -- dont care abt this
+		target -- apke project ka jar will be created here
+		pom.xml --- project object model
+	
+	Why maven
+		-- it resolves transitive dependencies automatically
+		--Every developer in a projects will get same version of jar -- output consistent
+		-- Size k hisaab se compact and can be shared
+		
+		
+	In case any issues in archtype	https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/
+	
+	
+	take hibernate project from repository -- download
+		
+	
+	
+	
+		
+		
